@@ -8,7 +8,10 @@
 
 This is an app that allows the users to create accounts and create their own blogs. Users also can  see other blogs on the app, vote on them and comment on them
 ## Screenshot
-<img src="https://scrn.li/uploads/7/7f/7f5/7f51/7f514/7f5140/7f514065-1868-0e41-8ce1-ee12f448cd17/1NF8TWFI1yXL8X">
+![](https://i.imgur.com/ZeKsyvl.png)
+![](https://i.imgur.com/tQL9gZr.png)
+
+
 ## Prerequisites
 
 You Require to install
