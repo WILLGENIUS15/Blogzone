@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+{% from 'macros.html' import displayBlogs as db%}
+<!-- Styles block -->
+
+
+<!-- Content block -->
+{%block content%}
+<div class="container-fluid text-center" style="background-image: url(https://images.unsplash.com/photo-1537726086503-4806b83dab73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80); background-repeat: no-repeat; background-size: cover; background-position: center center; color: white; padding: 60px 25px; font-family: 'Abril Fatface', cursive;, cursive; height: 950px;">
+    <h1 style="font-size: 100px;">welcome to Blogzone</h1>
+
+    <div >
+        <a href="{{url_for('main.new_blog')}}" class="btn dark primary-color waves-effect" style="margin-left: 480px; font-size: 25px; margin-top: 25%; margin-right: 500px">Write Blog</a>
+    </div>
+        
+</div>
+<br>
+<br>
+<div class="container-fluid" style="background-image: url(https://images.unsplash.com/photo-1490093158370-1a6be674437b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=616&q=80); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="container" style="padding:40px; ">
+        <div class="row" style="margin: 30px; ;">
+          
+          <div class="col-sm-4">
+            <div class="card">
+                  <h4 class="card-header -dark primary-color">{{ quote.author }}</h4>
+                  <p class="card-body">{{ quote.quote }}</p>
+              </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="card">
+                  <h4 class="card-header -dark primary-color" >{{ quote1.author }}</h4>
+                  <p class="card-body">{{ quote1.quote }}</p>
+              </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="card">
+                  <h4 class="card-header -dark primary-color">{{ quote2.author }}</h4>
+                  <p class="card-body">{{ quote2.quote }}</p>
+              </div>
+          </div>
+          
+        </div>
+        
+        <div class="row" style="margin: 30px;">
+          <div class="col-sm-4">
+            <div class="card">
+                  <h4 class="card-header -dark primary-color">{{ quote3.author }}</h4>
+                  <p class="card-body">{{ quote3.quote }}</p>
+              </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="card">
+                  <h4 class="card-header -dark primary-color">{{ quote4.author }}</h4>
+                  <p class="card-body">{{ quote4.quote }}</p>
+              </div>
+          </div>
+          
+          <div class="col-sm-4">
+            <div class="card">
+                  <h4 class="card-header -dark primary-color">{{ quote5.author }}</h4>
+                  <p class="card-body">{{ quote5.quote }}</p>
+              </div>
+          </div>
+          
+          
+         
+        <div>
+      <div class="row">
+          {{db(blogs)}}
+      </div>   
+         
+
+{%endblock%}
